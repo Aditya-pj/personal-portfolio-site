@@ -1,0 +1,78 @@
+html {
+    background-color: rgb(149, 160, 186);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: black;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+    top: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 10px;
+    
+    
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: grey;
+}
+
+.navbar li a:active {
+    color: gray;
+}
+
+.hero {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+    color: rgb(46, 4, 46);
+   font-weight: 500;
+   display: flex;
+}
+
+.intro {
+    border: 2px solid rgb(175, 175, 195);
+    border-radius: 15px;
+    max-width: 600px;
+    background-color: rgb(198, 198, 218);
+    padding: 20px;
+    overflow-wrap: break-word;
+    margin: 20px;
+}
+
+.image {
+    
+}
+
+#avatar {
+    object-fit: cover;
+  max-width: 500px;
+    
+    
+    border-radius: 500px;
+}
+
+#hi {
+    padding: 40px;
+    font-size: 20px;
+}
+
+#pos {
+    font-size: 30px;
+    padding: 40px;
+    font-weight: 600;
+}
