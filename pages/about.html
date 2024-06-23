@@ -13,11 +13,20 @@
     <header>
         <ul class="navbar">
             <li><a href="/">Home</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/about.html">About Me</a></li>
-            <li><a href="pages/contact.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </header>
+    <button class="dropdown" onclick="togglebar();">&#9776;</button>
+    <div class="menu" id="hambutton">
+        <ul class="menu_ul">
+            <li class="menu_li"><a href="/">Home</a></li>
+            <li class="menu_li"><a href="projects.html">Projects</a></li>
+            <li class="menu_li"><a href="about.html">About Me</a></li>
+            <li class="menu_li"><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
     <h1>About Me</h1>
     <div class="about-me">
         <div style="padding-bottom: 20px;">Hi, I'm Aditya P J</div>
@@ -26,6 +35,6 @@
         <div>Interested in becoming a software Developer</div>
     </div>
     
-    <script href="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

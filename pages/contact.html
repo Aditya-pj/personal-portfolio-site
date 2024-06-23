@@ -13,26 +13,42 @@
     <header>
         <ul class="navbar">
             <li><a href="/">Home</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/about.html">About Me</a></li>
-            <li><a href="pages/contact.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </header>
+    <button class="dropdown" onclick="togglebar();">&#9776;</button>
+    <div class="menu" id="hambutton">
+        <ul class="menu_ul">
+            <li class="menu_li"><a href="/">Home</a></li>
+            <li class="menu_li"><a href="projects.html">Projects</a></li>
+            <li class="menu_li"><a href="about.html">About Me</a></li>
+            <li class="menu_li"><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
     <h1>Contact Form</h1>
-    <form action="">
+    <form onsubmit="return validate_form()">
         <div class="form-input">
             <label for="name">Name</label>
-            <input id="name" placeholder="John Doe" type="text">
+            <input id="name" placeholder="John Doe" type="text" name="name">
+            <div id="name_error" class="error_msg"></div>
         </div>
         <div class="form-input">
             <label for="email">Email</label>
-            <input id="email" placeholder="johndoe@example.com" type="email">
+            <input id="email" placeholder="johndoe@example.com" name="email" type="email">
+            <div id="email_error" class="error_msg"></div>
         </div>
         <div class="form-input">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Enter your message...">
+            <div style="padding-bottom:20px;"><label for="message">Message</label></div>
+            <textarea name="message" id="message" placeholder="Enter your message..." rows="10" cols="40"></textarea>
+            <textarea name="message" id="message_2" placeholder="Enter your message..." rows="10" cols="20"></textarea>
+            <div id="message_error" class="error_msg"></div>
         </div>
+        <div id="success_message" class="error_msg"></div>
+        <input type="submit" value="Submit" class="submit_button">
+        
     </form>
-    <script href="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

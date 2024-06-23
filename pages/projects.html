@@ -13,15 +13,24 @@
     <header>
         <ul class="navbar">
             <li><a href="/">Home</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/about.html">About Me</a></li>
-            <li><a href="pages/contact.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </header>
+    <button class="dropdown" onclick="togglebar();">&#9776;</button>
+    <div class="menu" id="hambutton">
+        <ul class="menu_ul">
+            <li class="menu_li"><a href="/">Home</a></li>
+            <li class="menu_li"><a href="projects.html">Projects</a></li>
+            <li class="menu_li"><a href="about.html">About Me</a></li>
+            <li class="menu_li"><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
     <h1>My Projects</h1>
     <section class="cards">
         <div class="card">
-            <img src="images/gym_website.png" alt="project 1" width="300px">
+            <img src="../images/gym_website.png" alt="project 1" width="300px">
             <div class="card-body">
                 <div class="card-title">Gym website</div>
                 <div class="card-description">
@@ -30,7 +39,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/weather_app.jpg" alt="project 1" width="300px">
+            <img src="../images/weather_app.png" alt="project 1" width="300px" style="max-height: 400px;">
             <div class="card-body">
                 <div class="card-title">Weather App</div>
                 <div class="card-description">
@@ -39,7 +48,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/learning_website.jpg" alt="project 1" width="300px">
+            <img src="../images/learning_website.png" alt="project 1" width="300px">
             <div class="card-body">
                 <div class="card-title">Learning Website</div>
                 <div class="card-description">
@@ -48,7 +57,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/rock_paper.jpg" alt="project 1" width="300px">
+            <img src="../images/rock_paper.png" alt="project 1" width="300px">
             <div class="card-body">
                 <div class="card-title">Rock Paper Scissors Game</div>
                 <div class="card-description">
@@ -58,6 +67,6 @@
         </div>
 
     </section>
-    <script href="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

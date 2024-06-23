@@ -1,140 +1,625 @@
-html {
-    background-color: rgb(149, 160, 186);
-    font-family: 'Poppins', sans-serif;
-}
+@media screen and (max-width: 540px)
+{
+    html {
+        background-color: rgb(149, 160, 186);
+        font-family: 'Poppins', sans-serif;
+    }
 
-header {
-    background-color: black;
-    border-radius: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-    color: white;
-    top: 10px;
-}
+    .dropdown {
+        background-color: black;
+        color: white;
+        height: 30px;
+        width: 30px;
+    }
 
-.navbar {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
-    padding: 10px;
+    .menu {
+        display: none;
+        background-color: black;
+        color: white;
+        
+    }
+
+    .show_menu {
+        
+        width: 200px;
+        border-radius: 15px;
+            background-color: black;
+            color: white;
+        padding: 8px;
+    }
+
+    .menu_ul {
+        list-style-type: none;
+    }
+
+    .menu_li {
+        padding: 8px;
+       
+    }
+
+    .menu_li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu_li a:hover {
+        color: grey;
+    }
+
+    
+    header {
+        background-color: black;
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 800px;
+        color: white;
+        top: 10px;
+        display: none;
+    }
+    
+    .navbar {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        padding: 10px;
+        
+        
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar li a:hover {
+        color: grey;
+    }
+    
+    .navbar li a:active {
+        color: gray;
+    }
+
+    .image {
+        margin: 10px;
+    }
+    
+    .hero {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 50px;
+        color: rgb(46, 4, 46);
+       font-weight: 500;
+       
+    }
+    
+    .intro {
+        border: 2px solid rgb(175, 175, 195);
+        border-radius: 15px;
+        max-width: 600px;
+        background-color: rgb(198, 198, 218);
+        padding: 20px;
+        overflow-wrap: break-word;
+        margin: 20px;
+        
+    }
+    
+    #avatar {
+        object-fit: cover;
+      max-width: 400px;
+        
+
+        border-radius: 500px;
+    }
+
     
     
+    #hi {
+        padding: 40px;
+        font-size: 20px;
+    }
+    
+    #pos {
+        font-size: 30px;
+        padding: 40px;
+        font-weight: 600;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1080px;
+        justify-content: space-evenly;
+       
+    }
+    
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        overflow-wrap: break-word;
+        max-width: 300px;
+    }
+    
+    .card-title {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+    
+    .card-description {
+        font-size: 16px;
+    }
+    
+    .about-me {
+        margin: 40px;
+        background-color: white;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        color: rgb(35, 2, 35);
+        padding: 50px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    form {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    form div input {
+        border-radius: 30px;
+        padding: 15px;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+    
+    form div label {
+        font-size: 25px;
+        font-weight: 400;
+        padding-right: 50px;
+    }
+    
+    .form-input {
+        padding: 15px;
+    }
+
+    #message {
+        display: none;
+    }
+    
+    #message_2 {
+        display: block;
+        border-radius: 10px;
+        padding: 20px;
+        border: 2px solid gray;
+        font-size: 20px;
+    }
+    
+    .submit_button {
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        padding: 17px;
+        font-size: 20px;
+        margin: 0 auto;
+        cursor: pointer;
+        margin: 15px;
+    }
+    
+    .error_msg {
+        padding: 10px;
+        color: red;
+    }
+    
+    #success_message{
+        padding-bottom: 50px !important;
+        color: green !important;
+        font-weight: bold !important;
+    }
 }
 
-.navbar li a {
-    text-decoration: none;
-    color: white;
+@media screen and (min-width: 541px) and (max-width: 877px)
+{
+    html {
+        background-color: rgb(149, 160, 186);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    header {
+        background-color: black;
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 800px;
+        color: white;
+        top: 10px;
+    }
+    
+    .navbar {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        padding: 10px;
+        
+        
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar li a:hover {
+        color: grey;
+    }
+    
+    .navbar li a:active {
+        color: gray;
+    }
+
+    .dropdown {
+        display: none;
+    }
+    
+    .hero {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 50px;
+        color: rgb(46, 4, 46);
+       font-weight: 500;
+       
+    }
+    
+    .intro {
+        border: 2px solid rgb(175, 175, 195);
+        border-radius: 15px;
+        max-width: 600px;
+        background-color: rgb(198, 198, 218);
+        padding: 20px;
+        overflow-wrap: break-word;
+        margin: 20px;
+    }
+
+    .image {
+        margin: 10px;
+    }
+    
+    #avatar {
+        object-fit: cover;
+      max-width: 500px;
+        
+        
+        border-radius: 500px;
+    }
+    
+    #hi {
+        padding: 40px;
+        font-size: 20px;
+    }
+
+ 
+    
+    #pos {
+        font-size: 30px;
+        padding: 40px;
+        font-weight: 600;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1080px;
+       justify-content: space-evenly;
+    }
+    
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        overflow-wrap: break-word;
+        max-width: 300px;
+    }
+    
+    .card-title {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+    
+    .card-description {
+        font-size: 16px;
+    }
+    
+    .about-me {
+        margin: 40px;
+        background-color: white;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        color: rgb(35, 2, 35);
+        padding: 50px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    form {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    form div input {
+        border-radius: 30px;
+        padding: 15px;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+    
+    form div label {
+        font-size: 25px;
+        font-weight: 400;
+        padding-right: 50px;
+    }
+    
+    .form-input {
+        padding: 30px;
+    }
+
+    #message_2 {
+        display: none;
+    }
+    
+    #message {
+        border-radius: 10px;
+        padding: 20px;
+        border: 2px solid gray;
+        font-size: 20px;
+    }
+    
+    .submit_button {
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        padding: 17px;
+        font-size: 20px;
+        margin: 0 auto;
+        cursor: pointer;
+        margin: 15px;
+    }
+    
+    .error_msg {
+        padding: 10px;
+        color: red;
+    }
+    
+    #success_message{
+        padding-bottom: 50px !important;
+        color: green !important;
+        font-weight: bold !important;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .show_menu {
+        display: none;
+    }
 }
 
-.navbar li a:hover {
-    color: grey;
-}
+@media screen and (min-width: 878px)
+{
+    html {
+        background-color: rgb(149, 160, 186);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    header {
+        background-color: black;
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 800px;
+        color: white;
+        top: 10px;
+    }
+    
+    .navbar {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        padding: 10px;
+        
+        
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar li a:hover {
+        color: grey;
+    }
+    
+    .navbar li a:active {
+        color: gray;
+    }
 
-.navbar li a:active {
-    color: gray;
-}
+    .show_menu {
+        display: none;
+    }
+    
+    .hero {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 50px;
+        color: rgb(46, 4, 46);
+       font-weight: 500;
+       display: flex;
+    }
+    
+    .intro {
+        border: 2px solid rgb(175, 175, 195);
+        border-radius: 15px;
+        max-width: 600px;
+        background-color: rgb(198, 198, 218);
+        padding: 20px;
+        overflow-wrap: break-word;
+        margin: 20px;
+       
+    }
 
-.hero {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 50px;
-    color: rgb(46, 4, 46);
-   font-weight: 500;
-   display: flex;
-}
-
-.intro {
-    border: 2px solid rgb(175, 175, 195);
-    border-radius: 15px;
-    max-width: 600px;
-    background-color: rgb(198, 198, 218);
-    padding: 20px;
-    overflow-wrap: break-word;
-    margin: 20px;
-}
-
-#avatar {
-    object-fit: cover;
-  max-width: 500px;
     
     
-    border-radius: 500px;
+    #avatar {
+        object-fit: cover;
+      max-width: 500px;
+        
+        
+        border-radius: 500px;
+    }
+    
+    #hi {
+        padding: 40px;
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    #pos {
+        font-size: 30px;
+        padding: 40px;
+        font-weight: 600;
+    }
+
+    .image {
+        margin: 10px;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1080px;
+        justify-content: space-evenly;
+    }
+
+    .dropdown {
+        display: none;
+    }
+    
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        overflow-wrap: break-word;
+        max-width: 300px;
+    }
+    
+    .card-title {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+    
+    .card-description {
+        font-size: 16px;
+    }
+    
+    .about-me {
+        margin: 40px;
+        background-color: white;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        color: rgb(35, 2, 35);
+        padding: 50px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    form {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    form div input {
+        border-radius: 30px;
+        padding: 15px;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+    
+    form div label {
+        font-size: 25px;
+        font-weight: 400;
+        padding-right: 50px;
+    }
+    
+    .form-input {
+        padding: 30px;
+    }
+
+    #message_2 {
+        display: none;
+    }
+    
+    #message {
+        
+        border-radius: 10px;
+        padding: 20px;
+        border: 2px solid gray;
+        font-size: 20px;
+    }
+    
+    .submit_button {
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        padding: 17px;
+        font-size: 20px;
+        margin: 0 auto;
+        cursor: pointer;
+        margin: 15px;
+    }
+    
+    .error_msg {
+        padding: 10px;
+        color: red;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    #success_message{
+        padding-bottom: 50px !important;
+        color: green !important;
+        font-weight: bold !important;
+    }
 }
 
-#hi {
-    padding: 40px;
-    font-size: 20px;
-}
-
-#pos {
-    font-size: 30px;
-    padding: 40px;
-    font-weight: 600;
-}
-
-h1 {
-    text-align: center;
-    font-size: 40px;
-    padding-top: 30px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px auto;
-    max-width: 1080px;
-   
-}
-
-.card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    overflow-wrap: break-word;
-    max-width: 300px;
-}
-
-.card-title {
-    font-weight: bold;
-    font-size: 30px;
-    margin: 20px 0 20px 0;
-}
-
-.card-description {
-    font-size: 16px;
-}
-
-.about-me {
-    margin: 40px;
-    background-color: white;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 10px;
-    color: rgb(35, 2, 35);
-    padding: 50px;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-form {
-    margin: 0 auto;
-    max-width: 450px;
-}
-form div input {
-    border-radius: 30px;
-    padding: 15px;
-    font-size: 20px;
-    border: 1px solid black;
-}
-
-form div label {
-    font-size: 25px;
-    font-weight: 400;
-    padding-right: 50px;
-}
-
-.form-input {
-    paddi: 50px;
-}
